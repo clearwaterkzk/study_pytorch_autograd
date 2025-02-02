@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  local-dev:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: pytorch-dev-environment-image
+    container_name: pytorch-dev-environment-container
+    shm_size: 120g
+    tty: true
+    stdin_open: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['0'] # https://docs.docker.com/compose/how-tos/gpu-support/#access-specific-devices
+              capabilities: [gpu]
+    volumes:
+      - ./:/pinn
+    working_dir: /pinn
