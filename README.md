@@ -37,3 +37,4 @@ $ python auto_grad_sample.py
 ## 参考文献
 - 1. 岡谷貴之.「深層学習」(機械学習プロフェッショナルシリーズ). 講談社, 2022.
 - 2. 菅沼雅徳.「深層学習による画像認識の基礎」. オーム社, 2024. 
+- 3. 岡崎直観. 「機械学習手帳」. https://chokkan.github.io/mlnote/classification/04nntrain.html#id2
