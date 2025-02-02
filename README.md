@@ -8,7 +8,7 @@ $ docker compose up -d
 ```
 
 ## 自動微分および計算グラフの可視化サンプル
- $ L = (xy)^2 $ の自動微分を計算する。
+$L = (xy)^2$ の自動微分を計算する。
 ```
 # コンテナに入る
 $ docker exec -it pytorch-dev-environment-container bash
